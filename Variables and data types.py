@@ -38,9 +38,83 @@ my_ports.extend([23, 21])
 or
 my_ports += [86, 87] = my_ports = my_ports + [86, 87]
 
-1.6 Sort The list
+ort The list
 my_ports = sorted(my_ports)
 delete elements
 del my_ports[0] first element
+delete elements 
+```
+del my_ports[0] first element
+```
+Delete the last element:
+```
+[8, 2, 'Hola', 9, 3, 4]
+>>> mi_lista.pop()
+4
+```
+insert elements
+```
+>>> mi_lista.insert(2, 9) -> in the second position insert the number 9
+>>> mi_lista
+[8, 2, 9, 3, 4]
+```
+
+1.7 
+Find the index of the list
+```
+>>> mi_lista = [1, 3, 5, 6, 8, 10, 13, 14, 16, 18, 19, 21]
+>>> mi_lista
+[1, 3, 5, 6, 8, 10, 13, 14, 16, 18, 19, 21]
+>>> mi_lista.index(14)
+7
+>>> 
+```
+
+Search an element, with .index -> Only show you de first element that you find
+```
+>>> mi_lista += [12]
+>>> mi_lista += [1]
+>>> mi_lista += [3]
+>>> mi_lista.index(1)
+0
+>>> mi_lista
+[1, 3, 5, 6, 8, 10, 13, 14, 16, 18, 19, 21, 12, 1, 3]
+>>> mi_lista.index(1) 
+0
+>>> 
+```
+
+Enumerate the index and the element at the same time (x) is the index and (y) is the element
+```
+>>> for x, y in enumerate(mi_lista)
+...     print(f"{x}: {y}")
+... 
+0: 1
+1: 3
+2: 5
+3: 6
+4: 8
+5: 10
+6: 13
+7: 14
+8: 16
+9: 18
+10: 19
+11: 21
+```
+
+Filter for search an element conditionate by a index
+```
+>>> indices = [x for x, y in enumerate (mi_lista) if y == 14]
+>>> indices
+[7]
+```
+
+How many times an element is repeated
+```
+>>> mi_lista.count(14)
+1
+```
+
 
 
