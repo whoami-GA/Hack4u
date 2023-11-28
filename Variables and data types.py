@@ -116,5 +116,55 @@ How many times an element is repeated
 1
 ```
 
+Remove repetitions with set
+```
+>>> mi_lista = [1, 5, 6, 7, 8, 9 ,7 , 7]
+>>> mi_lista
+[1, 5, 6, 7, 8, 9, 7, 7]
+>>> set(mi_lista)
+{1, 5, 6, 7, 8, 9}
+>>> mi_lista = list(set(mi_lista))
+>>> mi_lista
+[1, 5, 6, 7, 8, 9]
+>>> 
+```
 
+The max/min number 
+```
+>>> mi_lista
+[1, 5, 6, 7, 8, 9]
+>>> print(f"[+] The max number is {max(mi_lista)}") or min
+[+] The max number is 9
+>>> 
+```
+
+The average/sum/minus
+```
+>>> sum(mi_lista)
+36
+```
+
+Average
+```
+>>> sum(mi_lista)
+36
+>>> len(mi_lista)
+6
+>>> sum(mi_lista) / len(mi_lista)
+6.0
+```
+
+Total numbers
+```
+>>> sum(mi_lista)
+36
+>>> len(mi_lista)
+6
+>>> sum(mi_lista) / len(mi_lista)
+6.0
+```
+Round
+```
+>>> round(sum(mi_lista) / len(mi_lista), 2)
+5.27
 
