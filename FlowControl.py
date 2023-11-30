@@ -162,3 +162,29 @@ if all_are_odd:
     print("Succes are Odd")
 else:
     print("You have an even in the list")
+
+#--- Pactice
+
+ import os
+ import time
+ 
+ list = [2, 4, 5, 6, 10, 12, 13]
+ planets = {"Earth": 1, "Mercur": 2, "Venus": 3, "Mars": 4, "Neptun": 5, "Uran": 6, "Saturn": 7, "Pluto": 8}
+ 
+ 
+ 
+ for i in list:
+     if i %2 == 0:
+         i += 1
+         print(i)
+     elif i !=0:
+         print(f"The fake man! {i}")
+     else:
+         print("eRRor")
+ 
+ def planAlin():
+     for planet, position in planets.items():
+         print(f"Planet {planet} {position}")
+         time.sleep(0.5)
+         os.system("whoami")
+ planAlin()
